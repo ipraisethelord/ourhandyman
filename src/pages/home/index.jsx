@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
-
+import PlayerComponent from '../../components/player';
 export const Home = () => {
   return (
     <HelmetProvider>
@@ -15,7 +15,7 @@ export const Home = () => {
           <title>{meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
-        <div className="intro_sec d-block d-lg-flex align-items-center">
+        <div className="intro_sec d-block d-lg-flex ">
           <div
             className="h_bg-image order-1 order-lg-2 h-100"
             style={{ backgroundImage: `url(${introdata.your_img_url})` }}
@@ -76,6 +76,9 @@ export const Home = () => {
                       </Col>
                     </Row>
                   </Container>
+                </div>
+                <div className="align-self-left">
+                <PlayerComponent />
                 </div>
               </div>
             </div>
