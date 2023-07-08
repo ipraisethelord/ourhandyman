@@ -9,9 +9,12 @@ export const Portfolio = () => {
   const [showModal, setShowModal] = useState(false);
 const [selectedImage, setSelectedImage] = useState("");
 const [selectedImageDesc, setSelectedImageDesc] = useState("");
-const openModal = (imgSrc, desc) => {
+const [selectedPhotos, setSelectedPhotos] = useState("");
+const openModal = (imgSrc, desc, photos) => {
   setSelectedImage(imgSrc);
   setSelectedImageDesc(desc);
+  
+  setSelectedPhotos(photos);
   setShowModal(true);
 };
 
@@ -36,12 +39,13 @@ const closeModal = () => {
         </Row>
         <div className="mb-5 po_items_ho">
           {dataportfolio.map((data, i) => {
+          
             return (
               <div key={i} className="po_item">
-                <img src={data.img} alt="" onClick={() => openModal(data.img, data.description)} />
+                <img src={data.img} alt="" onClick={() => openModal(data.img, data.description, data.photos)} />
               <div className="content">
                 <p>{data.description}</p>
-                <a href="#" onClick={() => openModal(data.img, data.description)}>view detail</a>
+                <a href="#" onClick={() => openModal(data.img, data.description , data.photos)}>view detail</a>
               </div>
               </div>
             );
@@ -52,6 +56,7 @@ const closeModal = () => {
           handleClose={closeModal}
           imageUrl={selectedImage}
           desc={selectedImageDesc}
+          photos={selectedPhotos}
         />
 
       </Container>
