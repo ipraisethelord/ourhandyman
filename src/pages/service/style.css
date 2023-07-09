@@ -64,7 +64,7 @@
 .service__title {
     padding: 8px 0;
     border-bottom: solid 1px var(--secondary-color);
-    color: red;
+    color: orangered;
 }
 
 .service-section .service-category-title {

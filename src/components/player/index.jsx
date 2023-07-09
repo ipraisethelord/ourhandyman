@@ -1,7 +1,8 @@
 import ReactPlayer from 'react-player';
 import React, { useRef } from 'react';
 import './style.css';
-const VIDEO_PATH = 'bathroom.mp4';
+import { introdata } from '../../content_option';
+const VIDEO_PATH = introdata.theme_video_url;
 function PlayerComponent() {
    const playerRef = useRef(null);
    return (

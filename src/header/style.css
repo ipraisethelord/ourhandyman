@@ -6,6 +6,7 @@
 
 .menu__button {
     color: var(--text-color);
+   
 }
 
 .menu__button:focus,
@@ -25,7 +26,7 @@
     padding: 5px 15px;
     margin: 0;
     border: unset;
-    background: var(--primary-color);
+    background: var(--primary-color);  
     font-size: 1.25rem;
     font-family: Marcellus;
     color: var(--text-color-2);
@@ -211,7 +212,7 @@
    font-size: 1em;
 }
 .link-logo {
-    color: red !important;
+    color: orangered !important;
    
 }
 .link-logo  p {line-height:5px; font-size:0.8em;  }
