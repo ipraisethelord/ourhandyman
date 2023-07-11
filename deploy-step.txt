@@ -1,9 +1,22 @@
-1 create robots.txt
-Sitemap: https://www.thebesthandyman.pro/sitemap.txt
- 2. create sitemap.txthttps://thebesthandyman.pro
-https://thebesthandyman.pro/portfolio
-https://thebesthandyman.pro/service
-https://thebesthandyman.pro/contact
+1 create public/robots.txt
+Sitemap: https://www.thebesthandyman.pro/sitemap.xml
+2. create public/sitemap.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://thebesthandyman.pro</loc>
+  </url>
+  <url>
+    <loc>https://thebesthandyman.pro/portfolio</loc>
+  </url>
+  <url>
+    <loc>https://thebesthandyman.pro/service</loc>
+  </url>
+  <url>
+    <loc>https://thebesthandyman.pro/contact</loc>
+  </url>
+</urlset>
+
 3. modify vite.config.js
 
 import { defineConfig } from 'vite';
