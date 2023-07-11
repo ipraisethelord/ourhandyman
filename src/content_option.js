@@ -34,7 +34,7 @@ const services = [{
     },
     {
         title: "Fixture Replacement,  Light Fixtures Installation",
-        description: "Fixtures include cabinets, lights, built-in mirrors, ceiling fans, window shades might just wear out or experience damage over time, I provide my service to do the deedful",
+        description: "Fixtures include cabinets, lights, built-in mirrors, ceiling fans, window shades might just wear out or experience damage over time, I do all of them.",
     },
 
     {
@@ -43,15 +43,15 @@ const services = [{
     },
     {
         title: "Deck or Door Repair Jobs",
-        description: "I service, repair, and replace the deck or its specific parts. Door may have tear, dents and dings to the hinges, handles, and door surfaces.I can fix them to make them last longer. I can also install security doors.",
+        description: "I service, repair, and replace the deck or its specific parts. Door may have tear, dents and dings to the hinges, handles, and door surfaces. I can fix them to make them last longer. I can also install security doors.",
     },
     {
         title: "Minor Electrical Works",
-        description: "I can install gabage disposal, closet organizers or replace a lightbulb, ceiling fan, home security camera, smoke detectors, and light fixtures.",
+        description: "I can install garbage disposal, closet organizers or replace a lightbulb, ceiling fan, home security camera, smoke detectors, and light fixtures.",
     },
     {
         title: " Babyproofing",
-        description: "Installing covers on power outlets, Adding safety locks to things and places where the child should not have access to, Setting baby gates to limit their accessibility to just the babyproofed room, Anchoring the sharp and pointy edges of household furniture",
+        description: "Installing covers on power outlets, adding safety locks to things and places where the child should not have access to, Setting baby gates to limit their accessibility to just the babyproofed room, Anchoring the sharp and pointy edges of household furniture",
     },
     {
         title: "Pressure Washing",
@@ -71,7 +71,7 @@ const services = [{
     },
     {
         title: "Window Replacement and Covering Jobs",
-        description: "I install new window and repalce old window, I aslo take up window-covering jobs such as installing curtains or blindscurtains or blinds",
+        description: "I install new window and replace old window, I take up window-covering jobs such as installing curtains or blinds, curtains or blinds",
     },
     {
         title: "Build or Repair Fence",
