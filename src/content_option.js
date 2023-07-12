@@ -293,9 +293,9 @@ const contactConfig = {
     description: "We offer a comprehensive range of services to meet all your home improvement needs:Expert kitchen and bathroom remodeling, Professional floor installation, Interior and exterior painting, Skillful cabinets resurfacing, Reliable plumbing services, Precise drywall repair, Fixture installation or replacement, Window replacement and covering, Minor electrical works, Fence building or repairs, Door repairment, Plus, a wide range of other daily household needs catered to with expertise. Trust us to deliver exceptional craftsmanship, attention to detail, and a seamless home improvement experience. Contact us today to discuss your specific requirements and bring your vision to life.",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_SERVICE_ID: "service_hcs1hkn",
+    YOUR_TEMPLATE_ID: "template_k0d9xxq",
+    YOUR_USER_ID: "83aqU6hgnck0axqL_",
 };
 
 
