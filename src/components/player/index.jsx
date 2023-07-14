@@ -8,7 +8,7 @@ function PlayerComponent() {
    return (
       <div className='player-wrapper'>
          <ReactPlayer className='react-player' ref={playerRef} url={VIDEO_PATH} controls={true}
-         width="80%"
+         width="80%" light={introdata.theme_video_thumbnail}/*for google index*/
         />
       </div>
    )

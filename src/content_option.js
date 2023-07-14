@@ -16,6 +16,7 @@ const introdata = {
     description: "I’m Misael, your all-in-one home repair professional serving the Sacramento area. With over 20 years of experience in home renovation, I handles projects big and small, ensuring they're done right the first time. With a commitment to quality workmanship at fair prices, my motto is fairness and honesty. Call 916-289-4652 today for an estimation on any home fixes you need.",
     your_img_url: "/images/bg.jpg",
     theme_video_url: "bathroom.mp4",
+    theme_video_thumbnail: "/thumbnail.jpg",
 };
 
 const dataabout = {
