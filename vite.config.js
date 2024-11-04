@@ -18,5 +18,8 @@ export default defineConfig({
       // Allow serving robots.txt and sitemap.txt
       allow: ['.', 'robots.txt', 'sitemap.txt'],
     },
+      mimeTypes: {
+            '.jsx': 'application/javascript'
+        },
   },
 });
