@@ -1,0 +1,91 @@
+1 create public/robots.txt
+Sitemap: https://www.thebesthandyman.pro/sitemap.xml
+2. create public/sitemap.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://thebesthandyman.pro</loc>
+  </url>
+  <url>
+    <loc>https://thebesthandyman.pro/portfolio</loc>
+  </url>
+  <url>
+    <loc>https://thebesthandyman.pro/service</loc>
+  </url>
+  <url>
+    <loc>https://thebesthandyman.pro/contact</loc>
+  </url>
+</urlset>
+
+3. modify vite.config.js
+
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { resolve } from 'path';
+export default defineConfig({
+  plugins: [react()],
+  base: '/',
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        404: resolve(__dirname, "public/404.html"),
+        cname: resolve(__dirname, 'public/CNAME'),
+      },
+    },
+  },
+  server: {
+    fs: {
+      // Allow serving robots.txt and sitemap.txt
+      allow: ['.', 'robots.txt', 'sitemap.txt'],
+    },
+  },
+});
+
+4. create 404.html page in public folder
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon1.ico" />
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Misael, the best handyman in Sacramento. With over 20 years of experience in home renovation, I handles projects big and small, ensuring they're done right the first time. With a commitment to quality workmanship at fair prices, my motto is fairness and honesty. Call 916-289-4652 today for an estimation on any home fixes you need." />
+  
+    <title>The Best Handyman in Sacramento</title>
+    <script>
+      sessionStorage.redirect = location.href;
+    </script>
+    <meta http-equiv="refresh" content="0;URL='/'" />
+  </head>
+  <body>
+  </body>
+</html>
+
+5. add   "homepage": "www.thebesthandyman.pro", to the package.json
+6. create CNAME in public folder
+www.thebesthandyman.pro
+7. add this to index.html in the <head> section
+ <script>
+      (() => {
+        const redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+8. Install gh-pages: npm install gh-pages
+9. add this to package.json "deploy": "gh-pages -d dist"
+10. npm run build
+11. npm run preview, if everything is fine, type control - c, terminate the preview.
+12. comiite your files to the github.
+13. go to github your repository, click settings/pages
+14. go to your domain: domain.com thebesthandyman.pro add DNS A Record:
+A	@	185.199.108.153	
+A	@	185.199.109.153
+
+A	@	185.199.110.153
+
+A	@	185.199.111.153
+
